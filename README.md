@@ -60,10 +60,10 @@ tweets using three different models: Textblob, Flair, and Distil Bert.
 
 We arrive at candidate-level data in the following steps:
 
-● Compute the average reply sentiment per candidate
-● Multiply the average sentiment per candidate with the number of replies on each tweet to get the weighted tweet sentiment
-● Multiply the weighted tweet sentiment with the topic contributions for each tweet to get topic sentiments for each tweet
-● Average the topic sentiments per candidate on their tweets for each of the 7 topics
+- Compute the average reply sentiment per candidate
+- Multiply the average sentiment per candidate with the number of replies on each tweet to get the weighted tweet sentiment
+- Multiply the weighted tweet sentiment with the topic contributions for each tweet to get topic sentiments for each tweet
+- Average the topic sentiments per candidate on their tweets for each of the 7 topics
 
 We repeat this exercise for the 3 sentiment models to get 3 datasets. We also use average likes per candidate, average retweets per candidate, and the number of candidates' followers as additional metadata information along with party information and information about whether the candidate is currently serving as a candidate (boolean). Hence, we arrive at 12 features for 93 candidates.
 
